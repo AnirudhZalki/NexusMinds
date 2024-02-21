@@ -2,6 +2,14 @@
 <html>
   <head>
     <title>Prisoner's Dilemma Game</title>
+	  <style>
+		   body 
+		  {
+            background-color: #C0C0C0; 
+            color: #333; 
+            font-family: Arial, sans-serif; 
+        	}
+	  </style>
   </head>
   <body>
     <h1>Prisoner's Dilemma Game</h1>
@@ -73,13 +81,13 @@
         cooperateButton.disabled = true;
         betrayButton.disabled = true;
         stopButton.disabled = true;
-	resultsDiv.innerHTML += `<p>Game Over!</p>`;
+
         // Display the final results and the winner
         displayFinalResults();
       }
 
       function displayFinalResults() {
-        resultsDiv.innerHTML += `<br>Final Scores:<br>Your Score: ${player1Score}<br>Bot's Score: ${player2Score}<br>`;
+        resultsDiv.innerHTML += `<br>Final Results:<br>Your Score: ${player1Score}<br>Bot's Score: ${player2Score}<br>`;
 
         // Determine the winner
         let winner;
@@ -90,13 +98,18 @@
         } else {
           winner = 'It\'s a tie!';
         }
-	 resultsDiv.innerHTML += `<p>Congratulations! to ${winner}!</p>`;
+	 resultsDiv.innerHTML += `<p>Congratulations! ${winner}!</p>`;
 
       }
     </script>
   </body>
 </html>
 
+
+
+
+ 
+   
 
 
 
